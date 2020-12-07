@@ -1,0 +1,275 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.woff") format("woff");
+  font-weight: 900;
+  display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../fonts/Nunito-SemiBold.woff2") format("woff2"), url("../fonts/Nunito-SemiBold.woff") format("woff");
+  font-weight: 600;
+  display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../fonts/Nunito-Regular.woff2") format("woff2"), url("../fonts/Nunito-Regular.woff") format("woff");
+  font-weight: normal;
+  display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../fonts/Nunito-LightItalic.woff2") format("woff2"), url("../fonts/Nunito-LightItalic.woff") format("woff");
+  font-weight: 300;
+  display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../fonts/Nunito-Bold.woff2") format("woff2"), url("../fonts/Nunito-Bold.woff2") format("woff");
+  font-weight: bold;
+  display: swap;
+  font-style: normal;
+}
+
+.container {
+  width: 85%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.button {
+  padding: 11px 21px;
+  border: none;
+  border-radius: 2px;
+  font-family: 'Futura Demi';
+  font-size: 0.93rem;
+  text-transform: uppercase;
+  outline: 0;
+  outline-offset: 0;
+}
+
+.button:hover {
+  background-color: #c39f65;
+  cursor: pointer;
+  outline: none;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after *:active *:focus *:hover {
+  outline: 0;
+  outline-offset: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  position: relative;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  background-color: #f9fbff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding: 90px 0px;
+}
+
+.section__title {
+  font-family: 'Montserrat';
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  color: #415167;
+}
+
+.section__title-desc {
+  display: block;
+  font-family: Nunito;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #415167;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 70px;
+  z-index: 3;
+}
+
+.menu__nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 330px;
+  height: 100vh;
+  padding: 0px 0px 0px 60px;
+  background-color: #415167;
+  z-index: 1;
+}
+
+.nav__item {
+  display: block;
+  margin-bottom: 30px;
+  font-family: 'Nunito';
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.nav__item:hover {
+  font-weight: bold;
+}
+
+.cart__link {
+  z-index: 3;
+}
+
+.cart__count {
+  position: absolute;
+  top: -10px;
+  right: -12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3px 6px;
+  font-size: 12px;
+  text-decoration: none;
+  background: #C7A17A;
+  border-radius: 100px;
+  color: #ffffff;
+}
+
+.icon__cart-wrap {
+  position: relative;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #fafbff;
+  background-image: url("/img/design-your-coffee-bag.jpg");
+  background-repeat: no-repeat;
+  background-size: 63% 100%;
+  background-position: 71% center;
+}
+
+.hero__title {
+  max-width: 490px;
+  padding-top: 650px;
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 70px;
+  color: #415167;
+}
+
+.hero__play-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 54px;
+  height: 54px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  background-color: #ffffff;
+  border-radius: 100px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 4px 24px rgba(74, 74, 74, 0.5);
+          box-shadow: 0px 4px 24px rgba(74, 74, 74, 0.5);
+}
+
+.title__text-color {
+  display: block;
+  padding-left: 15px;
+  background-color: #C7A17A;
+  color: #ffffff;
+}
+
+.benefits {
+  width: 100%;
+  height: auto;
+}
+
+.benefits__title {
+  margin-bottom: 70px;
+}
+/*# sourceMappingURL=style.css.map */
